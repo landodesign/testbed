@@ -1,0 +1,12 @@
+$bg-color: #f4f4f4;
+$text-color: #333333;
+
+body {
+    background: $bg-color;
+    color: $text-color;
+}
+
+.container > .row{padding-top: 50px;}
+.navbar .container > .row{padding-top: 0px;}
+
+.jumbotron{background-color: transparent;}

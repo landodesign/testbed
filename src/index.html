@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <title>lando - front-end testbed</title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+
+    <body>
+      
+        <!-- SVG Sprite -->
+        <div style="height: 0; width: 0; position: absolute; visibility: hidden;" aria-hidden="true">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false">
+                <!-- Because of Firefox. -->
+                <defs>
+                    <radialGradient id="gradient">
+                        <stop offset="0" stop-color="#0868BB" />
+                        <stop offset="0.25" stop-color="#0075D8" />
+                        <stop offset="0.35" stop-color="#0868BB" />
+                        <stop offset="0.50" stop-color="#0075D8" />
+                        <stop offset="0.60" stop-color="#0868BB" />
+                        <stop offset="0.85" stop-color="#0075D8" />
+                        <stop offset="1" stop-color="#0868BB" />
+                    </radialGradient>
+                </defs>
+                <symbol id="ripply-scott" viewBox="0 0 100 100">
+                    <circle id="ripple-shape" fill="url(#gradient)" cx="1" cy="1" r="1" />
+                </symbol>
+            </svg>
+        </div>
+        <!-- /end sprite -->
+       
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container">
+            <a class="navbar-brand" href="#">Lando - Front-end Testbed</a>
+<!--
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample07">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Layout <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Components</a>
+                </li>
+              </ul>
+            </div>
+-->
+          </div>
+        </nav>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    
+                    <h2>Fade-in effect</h2>
+
+                    <div class="jumbotron">
+                     
+                     <div class="row">
+                         <div class="col-md">
+                            <h1 class="display-4">Hello, world!</h1>
+                            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                            <a type="button" href="javascript:void(0)" id="js-ripple-btn" class="button styl-material">
+                                Hover for Ripple
+                                <svg class="ripple-obj" id="js-ripple">
+                                    <use height="100" width="100" xlink:href="#ripply-scott" class="js-ripple"></use>
+                                </svg>
+                            </a>
+                         </div>
+                         <div class="col-md">
+                            <figure class="figure">
+                                  <img src="https://picsum.photos/400/250" class="figure-img img-fluid" alt="A generic square placeholder image with rounded corners in a figure.">
+                            </figure>
+                         </div>
+                     </div>
+                     
+
+                    </div>
+               
+                </div>
+            </div>
+            
+            <div class="row img-hover">
+                <div class="col-md-4">
+                   
+                    <h2>Image hover effect</h2>
+                   
+                    <figure class="figure">
+                     <a href="#">
+                         <div class="box-figure">
+                          <img src="https://picsum.photos/400/250" class="figure-img img-fluid" alt="A generic square placeholder image with rounded corners in a figure.">
+                         </div>
+                     </a>
+                    </figure>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md">
+                   
+                    <h2>Button ripple effect</h2>
+                   
+                    <a type="button" href="javascript:void(0)" id="js-ripple-btn" class="button styl-material">
+                        Hover for Ripple
+                        <svg class="ripple-obj" id="js-ripple">
+                            <use height="100" width="100" xlink:href="#ripply-scott" class="js-ripple"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md">
+                       
+                     <h2>City Hotspot</h2>
+                      
+                      <div class="city-hotspot">
+                       
+                       <div class="row">
+                           <div class="col-md">
+                               <button class="plus"></button>
+                           </div>
+                           <div class="col-md">
+                               <button class="pulse"></button>
+                           </div>
+                       </div>
+                       
+                       
+                           
+                       </div>
+                     
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md">
+                </div>
+            </div>
+        </div>
+       
+        <script src="/js/jquery.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/ripple-config.js"></script>
+        <script src="/js/scripts.js"></script>
+    </body>
+</html>
