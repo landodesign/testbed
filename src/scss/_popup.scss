@@ -1,34 +1,38 @@
-.city-hotspot{
-
-    background-color: #041E42;
-    padding: 50px;
-
-    .plus{
-        position: relative;
-        z-index: 1;
-        width: 32px;
-        height: 32px;
-        background: #ffffff;
-        border-radius: 50%;
-        border: none;
-        transition: box-shadow 400ms cubic-bezier(.2,0,.7,1), transform 200ms cubic-bezier(.2,0,.7,1);
-        line-height: 0;
-        &:after{
-            content: "";
-            display: inline-block;
-            width: 16px;
-            height: 16px;
-            border-radius: 50%;
-            background: linear-gradient(221deg, #2099AB 0%, #156470 100%);
-        }
-        
-        &:hover{
-            box-shadow: 0 0 1px 7px rgba(32, 153, 171, 0.4),
-            0 0 1px 14px rgba(32, 153, 171, 0.1);
-            cursor: pointer;
-        }
+.popup {
+    // display: none;
+    position: absolute;
+    top: 15px;
+    background: rgba(4, 30, 66, 0.9);
+    width: 294px;
+    padding: 14px 12px 11px 19px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    left: 15px;
+    
+    .heading {
+        margin-bottom: 15px;
     }
     
+    .icons {
+        float: left;
+        margin-right: 8px;
+        margin-left: -3px;
+    }
+    
+    button {
+        color: #fff;
+        background: #178D9E;
+        border: 0;
+        padding: 5px 14px;
+        border-radius: 20px;
+        line-height: 10px;
+        float: left;
+        font-size: 12px;
+        font-weight: 300;
+    }
+}
+
     .pulse {
         border: none;
         position: relative;
@@ -70,6 +74,3 @@
               0 0 1px 14px rgba(32, 153, 171, 0);
       }
     }
-    
-}
-
