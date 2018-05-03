@@ -1,5 +1,4 @@
 $( document ).ready(function() {
-   // console.log( "ready!" );
     
     var fooReveal = {
         origin      : 'bottom',
@@ -21,6 +20,26 @@ $( document ).ready(function() {
     };
 
     window.sr = ScrollReveal();
-    sr.reveal( '.jumbotron', fooReveal );
+    sr.reveal('.jumbotron', fooReveal);
+    
+    $('.heading').css('display', 'none');
+    $('.icons').css('display', 'none');
+    $('.read-more').css('display', 'none');
+    
+    $('.pulse').click(function() {
+      $('.popup').fadeToggle(1000, 'swing').toggleClass('expand');
+        
+    if ($('.popup').hasClass('expand')) {
+        $('.heading').fadeIn(1600);
+        $('.icons').fadeIn(2400);
+        $('.read-more').fadeIn(3000);
+    } else {
+        $('.heading').css('display', 'none');
+        $('.icons').css('display', 'none');
+        $('.read-more').css('display', 'none');
+    }
+        
+    });
     
 });
+

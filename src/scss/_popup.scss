@@ -1,37 +1,54 @@
-.popup {
-    // display: none;
-    position: absolute;
-    top: 15px;
-    background: rgba(4, 30, 66, 0.9);
-    width: 294px;
-    padding: 14px 12px 11px 19px;
-    font-size: 16px;
-    font-weight: 700;
-    color: #fff;
-    left: 15px;
+.pulse-popup{
     
-    .heading {
-        margin-bottom: 15px;
-    }
-    
-    .icons {
-        float: left;
-        margin-right: 8px;
-        margin-left: -3px;
-    }
-    
-    button {
+    margin-bottom: 100px;
+
+    .popup {
+        display: none;
+        position: absolute;
+        font-size: 16px;
+        font-weight: 700;
         color: #fff;
-        background: #178D9E;
-        border: 0;
-        padding: 5px 14px;
-        border-radius: 20px;
-        line-height: 10px;
-        float: left;
-        font-size: 12px;
-        font-weight: 300;
+        padding: 0;
+        top: 115px; // change this value when live
+        left: 30px;
+        background: rgba(4, 30, 66, 0.9);
+        transition: all 1s;
+        width: 0px;
+        height: 100px;
+
+        .heading {
+            margin-bottom: 10px;
+        }
+
+        .icons {
+            float: left;
+            margin-right: 8px;
+            margin-left: -3px;
+        }
+
+        button.read-more {
+            color: #fff;
+            background: #178D9E;
+            border: 0;
+            padding: 5px 14px;
+            margin-top: 5px;
+            border-radius: 20px;
+            line-height: 10px;
+            float: left;
+            font-size: 12px;
+            font-weight: 300;
+            
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        
+        &.expand{
+            padding: 18px;
+            width: 250px;
+        }
+
     }
-}
 
     .pulse {
         border: none;
@@ -74,3 +91,6 @@
               0 0 1px 14px rgba(32, 153, 171, 0);
       }
     }
+    
+}
+
