@@ -216,15 +216,15 @@ button:focus {
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 1px 7px rgba(32, 153, 171, 0.1), 0 0 1px 14px rgba(32, 153, 171, 0); }
-  30% {
-    box-shadow: 0 0 1px 7px rgba(32, 153, 171, 0.3), 0 0 1px 14px rgba(32, 153, 171, 0); }
-  50% {
+    box-shadow: 0 0 1px 7px rgba(32, 153, 171, 0), 0 0 1px 14px rgba(32, 153, 171, 0); }
+  40% {
+    box-shadow: 0 0 1px 7px rgba(32, 153, 171, 0.5), 0 0 1px 14px rgba(32, 153, 171, 0); }
+  45% {
     box-shadow: 0 0 1px 7px rgba(32, 153, 171, 0.5), 0 0 1px 14px rgba(32, 153, 171, 0.1); }
   70% {
-    box-shadow: 0 0 1px 7px rgba(32, 153, 171, 0.3), 0 0 1px 14px rgba(32, 153, 171, 0.1); }
+    box-shadow: 0 0 1px 7px rgba(32, 153, 171, 0.5), 0 0 1px 14px rgba(32, 153, 171, 0); }
   100% {
-    box-shadow: 0 0 1px 7px rgba(32, 153, 171, 0.1), 0 0 1px 14px rgba(32, 153, 171, 0); } }
+    box-shadow: 0 0 1px 7px rgba(32, 153, 171, 0), 0 0 1px 14px rgba(32, 153, 171, 0); } }
 
 .video {
   position: relative; }
