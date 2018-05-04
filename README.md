@@ -1,6 +1,6 @@
-# Lando - Front-end testbed
+Front-end testbed
 
-A playground for front-end experiments.
+A playground for front-end experiments made by Lando Tornabene.
 
 ## How to use
 
@@ -18,7 +18,7 @@ You need to install Node.js, Gulp, Gulpsass, Browsersync and Bootstrap 4. Check 
 
 ## Authors
 
-* **Lando Tornabene** - *Initial work* - [Lando Tornabene](http://landodesign.com)
+* **Lando Tornabene** [Portfolio](http://landodesign.com)
 
 ## License
 

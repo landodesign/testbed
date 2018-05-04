@@ -1,5 +1,24 @@
 $( document ).ready(function() {
     
+    $('.heading').css('display', 'none');
+    $('.icons').css('display', 'none');
+    $('.read-more').css('display', 'none');
+    
+    $('.pulse').click(function() {
+      $('.popup').fadeToggle(1000, 'swing').toggleClass('expand');
+        
+    if ($('.popup').hasClass('expand')) {
+        $('.heading').fadeIn(1600);
+        $('.icons').fadeIn(2400);
+        $('.read-more').fadeIn(3000);
+    } else {
+        $('.heading').css('display', 'none');
+        $('.icons').css('display', 'none');
+        $('.read-more').css('display', 'none');
+    }
+        
+    });
+    
     var fooReveal = {
         origin      : 'bottom',
         distance    : '20px',
@@ -21,25 +40,14 @@ $( document ).ready(function() {
 
     window.sr = ScrollReveal();
     sr.reveal('.jumbotron', fooReveal);
-    
-    $('.heading').css('display', 'none');
-    $('.icons').css('display', 'none');
-    $('.read-more').css('display', 'none');
-    
-    $('.pulse').click(function() {
-      $('.popup').fadeToggle(1000, 'swing').toggleClass('expand');
-        
-    if ($('.popup').hasClass('expand')) {
-        $('.heading').fadeIn(1600);
-        $('.icons').fadeIn(2400);
-        $('.read-more').fadeIn(3000);
-    } else {
-        $('.heading').css('display', 'none');
-        $('.icons').css('display', 'none');
-        $('.read-more').css('display', 'none');
-    }
-        
-    });
+    sr.reveal('.sq', {
+      origin: 'bottom',
+      duration : 1500,
+      distance : '100px',
+      delay    : 400,
+      easing   : 'ease-in-out',
+      scale    : 1
+    }, 100);
     
 });
 
