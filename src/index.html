@@ -11,7 +11,7 @@
 
     <body>
       
-        <!-- SVG Sprite -->
+        <!-- SVG Sprite for button ripple effect -->
         <div style="height: 0; width: 0; position: absolute; visibility: hidden;" aria-hidden="true">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false">
                 <!-- Because of Firefox. -->
@@ -69,7 +69,7 @@
                     <div class="jumbotron">
                      
                      <div class="row">
-                         <div class="col-md order-2">
+                         <div class="col-md order-lg-1 order-sm-2 order-2">
                             <h1 class="display-4">Hello, world!</h1>
                             <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
                             <a type="button" href="javascript:void(0)" id="js-ripple-btn" class="button styl-material">
@@ -79,7 +79,7 @@
                                 </svg>
                             </a>
                          </div>
-                         <div class="col-md order-1">
+                         <div class="col-md order-lg-2 order-sm-1 order-1">
                             <figure class="figure">
                                   <img src="https://picsum.photos/400/250" class="figure-img img-fluid" alt="A generic square placeholder image with rounded corners in a figure.">
                             </figure>
@@ -468,6 +468,16 @@
                 </div>
             </div>
             
+        </div>
+        
+        <div class="footer">
+           <div class="container">
+               <div class="row">
+                   <div class="col-md">
+                        <p class="small">&copy; 2018 Lando Tornabene. Made with Bootstrap 4, Node.js, HTML, SASS and Gulp. GitHub Repo <a href="https://github.com/landodesign/testbed">here</a>.</p>      
+                   </div>
+               </div>
+           </div>
         </div>
        
         <script src="/js/jquery.min.js"></script>

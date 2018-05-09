@@ -6,13 +6,17 @@ hr {
   margin: 50px 0px; }
 
 .container > .row {
-  padding-top: 50px; }
+  padding-top: 50px;
+  padding-bottom: 50px; }
 
 .navbar .container > .row {
   padding-top: 0px; }
 
 .jumbotron {
   background-color: transparent; }
+
+.footer {
+  background-color: #f0f0f0; }
 
 .img-hover .figure {
   display: block;
@@ -335,3 +339,6 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0; }
+
+.footer p {
+  margin-bottom: 0px; }
