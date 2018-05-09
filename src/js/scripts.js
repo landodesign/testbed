@@ -40,14 +40,22 @@ $( document ).ready(function() {
 
     window.sr = ScrollReveal();
     sr.reveal('.jumbotron', fooReveal);
-    sr.reveal('.sq', {
+    sr.reveal('.box-shadow, .sq', {
       origin: 'bottom',
-      duration : 1500,
-      distance : '100px',
-      delay    : 400,
+      duration : 1000,
+      distance : '50px',
+      delay    : 200,
       easing   : 'ease-in-out',
       scale    : 1
     }, 100);
+    sr.reveal('.pin', {
+      origin: 'top',
+      duration : 1000,
+      distance : '80px',
+      delay    : 200,
+      easing   : 'ease-in-out',
+      scale    : 1
+    }, 300);
     
 });
 

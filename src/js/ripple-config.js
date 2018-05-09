@@ -81,7 +81,7 @@ $( document ).ready(function() {
             var buttons = document.querySelectorAll(target);
 
             [].forEach.call(buttons, function (button) {
-                button.addEventListener('mouseover', function (event) {
+                button.addEventListener('mouseover', function (event) { // or "click"
                     rippleAnimation.call(this, button, event, timing);
                 });
             });
