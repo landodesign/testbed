@@ -107,26 +107,6 @@ button:focus {
 
 .city-hotspot {
   padding: 50px 0px; }
-  .city-hotspot .plus {
-    position: relative;
-    z-index: 1;
-    width: 32px;
-    height: 32px;
-    background: #ffffff;
-    border-radius: 50%;
-    border: none;
-    transition: box-shadow 400ms cubic-bezier(0.2, 0, 0.7, 1), transform 200ms cubic-bezier(0.2, 0, 0.7, 1);
-    line-height: 0; }
-    .city-hotspot .plus:after {
-      content: "";
-      display: inline-block;
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      background: linear-gradient(221deg, #2099AB 0%, #156470 100%); }
-    .city-hotspot .plus:hover {
-      box-shadow: 0 0 1px 7px rgba(32, 153, 171, 0.4), 0 0 1px 14px rgba(32, 153, 171, 0.1);
-      cursor: pointer; }
   .city-hotspot .pulse {
     border: none;
     position: relative;
@@ -216,15 +196,15 @@ button:focus {
       background: linear-gradient(221deg, #2099AB 0%, #156470 100%); }
   .pulse-popup .pulse:hover {
     animation: none;
-    box-shadow: 0 0 1px 7px rgba(32, 153, 171, 0.4), 0 0 1px 14px rgba(32, 153, 171, 0.1); }
+    box-shadow: 0 0 1px 7px rgba(255, 175, 57, 0.4), 0 0 1px 14px rgba(255, 175, 57, 0.1); }
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0px 0px rgba(32, 153, 171, 0.6), 0 0 0px 0px rgba(32, 153, 171, 0.4), 0 0 0px 0px rgba(32, 153, 171, 0.2); }
+    box-shadow: 0 0 0px 0px rgba(255, 175, 57, 0.6), 0 0 0px 0px rgba(255, 175, 57, 0.4), 0 0 0px 0px rgba(255, 175, 57, 0.2); }
   70% {
-    box-shadow: 0 0 0px 10px rgba(32, 153, 171, 0), 0 0 0px 15px rgba(32, 153, 171, 0), 0 0 0px 20px rgba(32, 153, 171, 0); }
+    box-shadow: 0 0 0px 10px rgba(255, 175, 57, 0), 0 0 0px 15px rgba(255, 175, 57, 0), 0 0 0px 20px rgba(32, 153, 171, 0); }
   100% {
-    box-shadow: 0 0 0px 0px rgba(32, 153, 171, 0), 0 0 0px 0px rgba(32, 153, 171, 0), 0 0 0px 0px rgba(32, 153, 171, 0); } }
+    box-shadow: 0 0 0px 0px rgba(255, 175, 57, 0), 0 0 0px 0px rgba(255, 175, 57, 0), 0 0 0px 0px rgba(255, 175, 57, 0); } }
 
 .video {
   position: relative; }
