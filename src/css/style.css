@@ -193,7 +193,7 @@ button:focus {
       width: 16px;
       height: 16px;
       border-radius: 50%;
-      background: linear-gradient(221deg, #2099AB 0%, #156470 100%); }
+      background: linear-gradient(221deg, #FFC94E 0%, #E08718 100%); }
   .pulse-popup .pulse:hover {
     animation: none;
     box-shadow: 0 0 1px 7px rgba(255, 175, 57, 0.4), 0 0 1px 14px rgba(255, 175, 57, 0.1); }
@@ -308,6 +308,35 @@ button:focus {
   transform: translate3d(0, 0, 0);
   text-align: center;
   opacity: 1; }
+
+.modal.right .modal-dialog {
+  position: fixed;
+  margin: auto;
+  width: 50%;
+  max-width: 100%;
+  height: 100%;
+  transform: translate3d(0%, 0, 0); }
+  .modal.right .modal-dialog .modal-content {
+    height: 100%;
+    overflow-y: auto;
+    border-radius: 0;
+    border: none; }
+    .modal.right .modal-dialog .modal-content .modal-header {
+      border-bottom-color: #EEEEEE;
+      background-color: #FAFAFA;
+      display: block; }
+      .modal.right .modal-dialog .modal-content .modal-header .close {
+        padding: 0px;
+        margin: 5px 5px 5px 0px; }
+    .modal.right .modal-dialog .modal-content .modal-body {
+      padding: 15px 15px 80px; }
+
+.modal.right.fade .modal-dialog {
+  right: -50%;
+  transition: opacity 0.5s linear, right 0.8s cubic-bezier(0.6, 0.2, 0.1, 1); }
+
+.modal.right.fade.show .modal-dialog {
+  right: 0; }
 
 h2 {
   margin-bottom: 20px; }
