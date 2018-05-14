@@ -341,8 +341,8 @@ button:focus {
     border: none;
     position: relative;
     z-index: 1;
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
     background: #ffffff;
     cursor: pointer;
@@ -352,8 +352,8 @@ button:focus {
     .city-json .pulse:after {
       content: "";
       display: inline-block;
-      width: 16px;
-      height: 16px;
+      width: 18px;
+      height: 18px;
       border-radius: 50%;
       background: linear-gradient(221deg, #FFC94E 0%, #E08718 100%); }
   .city-json .pulse:hover {
