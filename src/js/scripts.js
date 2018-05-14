@@ -56,6 +56,14 @@ $( document ).ready(function() {
       easing   : 'ease-in-out',
       scale    : 1
     }, 300);
+    sr.reveal('.city-json .pulse', {
+      origin: 'top',
+      duration : 1000,
+      distance : '80px',
+      delay    : 200,
+      easing   : 'ease-in-out',
+      scale    : 1
+    }, 300);
     
 });
 
