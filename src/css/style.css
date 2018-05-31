@@ -105,9 +105,9 @@ a[type="button"] {
 button:focus {
   outline: none; }
 
-.city-hotspot {
+.hotspot {
   padding: 50px 0px; }
-  .city-hotspot .pulse {
+  .hotspot .pulse {
     border: none;
     position: relative;
     z-index: 1;
@@ -119,14 +119,14 @@ button:focus {
     line-height: 0;
     box-shadow: 0 0 0 rgba(255, 255, 255, 0.6);
     animation: pulse 1.5s infinite; }
-    .city-hotspot .pulse:after {
+    .hotspot .pulse:after {
       content: "";
       display: inline-block;
       width: 16px;
       height: 16px;
       border-radius: 50%;
       background: linear-gradient(221deg, #2099AB 0%, #156470 100%); }
-    .city-hotspot .pulse:hover {
+    .hotspot .pulse:hover {
       animation: none;
       box-shadow: 0 0 1px 7px rgba(32, 153, 171, 0.4), 0 0 1px 14px rgba(32, 153, 171, 0.1); }
 
@@ -138,9 +138,9 @@ button:focus {
   100% {
     box-shadow: 0 0 0px 0px rgba(32, 153, 171, 0), 0 0 0px 0px rgba(32, 153, 171, 0), 0 0 0px 0px rgba(32, 153, 171, 0); } }
 
-.pulse-popup {
+.popup {
   margin-bottom: 100px; }
-  .pulse-popup .popup {
+  .popup .info-box {
     display: none;
     position: absolute;
     font-size: 16px;
@@ -153,13 +153,13 @@ button:focus {
     transition: all 1s;
     width: 0px;
     height: 100px; }
-    .pulse-popup .popup .heading {
+    .popup .info-box .heading {
       margin-bottom: 10px; }
-    .pulse-popup .popup .icons {
+    .popup .info-box .icons {
       float: left;
       margin-right: 8px;
       margin-left: -3px; }
-    .pulse-popup .popup button.read-more {
+    .popup .info-box button.read-more {
       color: #fff;
       background: #178D9E;
       border: 0;
@@ -170,12 +170,12 @@ button:focus {
       float: left;
       font-size: 12px;
       font-weight: 300; }
-      .pulse-popup .popup button.read-more:hover {
+      .popup .info-box button.read-more:hover {
         cursor: pointer; }
-    .pulse-popup .popup.expand {
+    .popup .info-box.expand {
       padding: 18px;
       width: 250px; }
-  .pulse-popup .pulse {
+  .popup .pulse-y {
     border: none;
     position: relative;
     z-index: 1;
@@ -186,54 +186,25 @@ button:focus {
     cursor: pointer;
     line-height: 0;
     box-shadow: 0 0 0 rgba(255, 255, 255, 0.6);
-    animation: pulse 2s infinite; }
-    .pulse-popup .pulse:after {
+    animation: pulse-y 2s infinite; }
+    .popup .pulse-y:after {
       content: "";
       display: inline-block;
       width: 16px;
       height: 16px;
       border-radius: 50%;
       background: linear-gradient(221deg, #FFC94E 0%, #E08718 100%); }
-  .pulse-popup .pulse:hover {
+  .popup .pulse-y:hover {
     animation: none;
     box-shadow: 0 0 1px 7px rgba(255, 175, 57, 0.4), 0 0 1px 14px rgba(255, 175, 57, 0.1); }
 
-@keyframes pulse {
+@keyframes pulse-y {
   0% {
     box-shadow: 0 0 0px 0px rgba(255, 175, 57, 0.6), 0 0 0px 0px rgba(255, 175, 57, 0.4), 0 0 0px 0px rgba(255, 175, 57, 0.2); }
   70% {
     box-shadow: 0 0 0px 10px rgba(255, 175, 57, 0), 0 0 0px 15px rgba(255, 175, 57, 0), 0 0 0px 20px rgba(32, 153, 171, 0); }
   100% {
     box-shadow: 0 0 0px 0px rgba(255, 175, 57, 0), 0 0 0px 0px rgba(255, 175, 57, 0), 0 0 0px 0px rgba(255, 175, 57, 0); } }
-
-.video {
-  position: relative; }
-  .video ul li#point1 {
-    position: absolute;
-    top: 180px;
-    left: 300px; }
-  .video ul li#point2 {
-    position: absolute;
-    top: 380px;
-    left: 100px; }
-  .video ul li#point3 {
-    position: absolute;
-    top: 350px;
-    left: 500px; }
-  .video ul li#point4 {
-    position: absolute;
-    top: 270px;
-    left: 930px; }
-  .video ul li#point5 {
-    position: absolute;
-    top: 450px;
-    left: 800px; }
-  .video #myVideo {
-    display: block;
-    position: relative;
-    width: 100%;
-    min-width: 100%;
-    min-height: 100%; }
 
 .map {
   position: relative;
@@ -302,7 +273,7 @@ button:focus {
 .city-json {
   position: relative;
   margin-bottom: 100px; }
-  .city-json .popup {
+  .city-json .info-box {
     display: none;
     position: absolute;
     font-size: 16px;
@@ -315,13 +286,13 @@ button:focus {
     transition: all 1s;
     width: 0px;
     height: 100px; }
-    .city-json .popup .heading {
+    .city-json .info-box .heading {
       margin-bottom: 10px; }
-    .city-json .popup .icons {
+    .city-json .info-box .icons {
       float: left;
       margin-right: 8px;
       margin-left: -3px; }
-    .city-json .popup button.read-more {
+    .city-json .info-box button.read-more {
       color: #fff;
       background: #178D9E;
       border: 0;
@@ -332,12 +303,12 @@ button:focus {
       float: left;
       font-size: 12px;
       font-weight: 300; }
-      .city-json .popup button.read-more:hover {
+      .city-json .info-box button.read-more:hover {
         cursor: pointer; }
-    .city-json .popup.expand {
+    .city-json .info-box.expand {
       padding: 18px;
       width: 250px; }
-  .city-json .pulse {
+  .city-json .pulse-y {
     border: none;
     position: relative;
     z-index: 1;
@@ -348,19 +319,19 @@ button:focus {
     cursor: pointer;
     line-height: 0;
     box-shadow: 0 0 0 rgba(255, 255, 255, 0.6);
-    animation: pulse 2s infinite; }
-    .city-json .pulse:after {
+    animation: pulse-y 2s infinite; }
+    .city-json .pulse-y:after {
       content: "";
       display: inline-block;
       width: 18px;
       height: 18px;
       border-radius: 50%;
       background: linear-gradient(221deg, #FFC94E 0%, #E08718 100%); }
-  .city-json .pulse:hover {
+  .city-json .pulse-y:hover {
     animation: none;
     box-shadow: 0 0 1px 7px rgba(255, 175, 57, 0.4), 0 0 1px 14px rgba(255, 175, 57, 0.1); }
 
-@keyframes pulse {
+@keyframes pulse-y {
   0% {
     box-shadow: 0 0 0px 0px rgba(255, 175, 57, 0.6), 0 0 0px 0px rgba(255, 175, 57, 0.4), 0 0 0px 0px rgba(255, 175, 57, 0.2); }
   70% {
@@ -396,6 +367,8 @@ button:focus {
     transform: translate3d(0, 0, 0);
     text-align: center;
     opacity: 1; }
+  .city-json .svg_icon {
+    width: 75px; }
 
 .modal.right .modal-dialog {
   position: fixed;

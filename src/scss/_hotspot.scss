@@ -1,6 +1,6 @@
 button:focus{outline: none;}
 
-.city-hotspot{
+.hotspot{
 
     padding: 50px 0px;
     
@@ -30,26 +30,25 @@ button:focus{outline: none;}
             box-shadow: 0 0 1px 7px rgba(32, 153, 171, 0.4),
                         0 0 1px 14px rgba(32, 153, 171, 0.1);
         }
+        
+        @keyframes pulse {
+          0% {
+            box-shadow: 0 0 0px 0px rgba(32, 153, 171, 0.6),
+                        0 0 0px 0px rgba(32, 153, 171, 0.4),
+                        0 0 0px 0px rgba(32, 153, 171, 0.2);
+          }
+          70% {
+              box-shadow: 0 0 0px 10px rgba(32, 153, 171, 0),
+                          0 0 0px 15px rgba(32, 153, 171, 0),
+                          0 0 0px 20px rgba(32, 153, 171, 0);
+          }
+          100% {
+              box-shadow: 0 0 0px 0px rgba(32, 153, 171, 0),
+                          0 0 0px 0px rgba(32, 153, 171, 0),
+                          0 0 0px 0px rgba(32, 153, 171, 0);
+          }
+        }
 
-    }
-
-
-    @keyframes pulse {
-      0% {
-        box-shadow: 0 0 0px 0px rgba(32, 153, 171, 0.6),
-                    0 0 0px 0px rgba(32, 153, 171, 0.4),
-                    0 0 0px 0px rgba(32, 153, 171, 0.2);
-      }
-      70% {
-          box-shadow: 0 0 0px 10px rgba(32, 153, 171, 0),
-                      0 0 0px 15px rgba(32, 153, 171, 0),
-                      0 0 0px 20px rgba(32, 153, 171, 0);
-      }
-      100% {
-          box-shadow: 0 0 0px 0px rgba(32, 153, 171, 0),
-                      0 0 0px 0px rgba(32, 153, 171, 0),
-                      0 0 0px 0px rgba(32, 153, 171, 0);
-      }
     }
     
 }
