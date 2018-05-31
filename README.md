@@ -1,14 +1,20 @@
-# Front-end testbed
+# Front-end Sandbox
 
-A playground for front-end experiments made by Lando Tornabene.
+A collection of snippets, animations and various effects.
 
 ## How to use
 
-Simply clone or download this repo and install it to your local enviroment. 
+Clone or download this repo and install it to your local enviroment. 
 
 ### Prerequisites
 
-You need to install Node.js, Gulp, Gulpsass, Browsersync and Bootstrap 4. Check package.json for all dependencies.
+Install the following on your machine:
+
+* Node.js
+* Gulp
+* Gulpsass
+* Browsersync
+* Bootstrap 4
 
 ## Built With
 
