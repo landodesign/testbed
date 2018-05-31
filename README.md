@@ -2,6 +2,8 @@
 
 A collection of snippets, animations and various effects.
 
+See test link [here](http://testbed.arekibo.com/github/animations/)
+
 ## How to use
 
 Clone or download this repo and install it to your local enviroment. 
